@@ -5,12 +5,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/v1/docker")
+@RequestMapping("/v1")
 public class HelloDocker {
 
-    @GetMapping(value = "/hello")
+    @GetMapping(value = "/docker/hello")
     public String helloDocker(){
         return "Hello Docker";
+    }
+
+    @GetMapping(value = "/jenkins/hello")
+    public String helloJenkins(){
+        return "Hello Jenkins";
     }
 
 }

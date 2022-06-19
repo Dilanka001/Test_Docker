@@ -18,4 +18,9 @@ public class HelloDocker {
         return "Hello Jenkins";
     }
 
+    @GetMapping(value = "/jenkins/check")
+    public String checkJenkins(){
+        return "check 1 2 3";
+    }
+
 }

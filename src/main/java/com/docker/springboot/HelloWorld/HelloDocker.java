@@ -20,7 +20,7 @@ public class HelloDocker {
 
     @GetMapping(value = "/jenkins/check")
     public String checkJenkins(){
-        return "check 1 2 3";
+        return "check 1 2 3 4";
     }
 
 }
